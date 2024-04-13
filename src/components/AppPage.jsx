@@ -1,3 +1,7 @@
+import BitcoinTracker from "./BitcoinTracker";
+import TaskTrackerApp from "./TaskTrackerApp";
+import UnderConstruction from "./UnderConstruction";
+
 const AppPage = ({
   hangman = false,
   tasktracker = false,
@@ -8,9 +12,9 @@ const AppPage = ({
     <div className="appHolder">
       <div className="appFrame">
         <div>{hangman ? <p>Hangman</p> : <></>}</div>
-        <div>{tasktracker ? <p>tasktracker</p> : <></>}</div>
-        <div>{bitcoin ? <p>bitcoin</p> : <></>}</div>
-        <div>{construction ? <p>construction</p> : <></>}</div>
+        <div>{tasktracker ? <TaskTrackerApp /> : <></>}</div>
+        <div>{bitcoin ? <BitcoinTracker /> : <></>}</div>
+        <div>{construction ? <UnderConstruction /> : <></>}</div>
       </div>
     </div>
   );

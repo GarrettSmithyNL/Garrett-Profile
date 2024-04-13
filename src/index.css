@@ -39,8 +39,8 @@ body {
 .links {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 150px;
+  justify-content: space-evenly;
+  width: 250px;
 }
 
 .tilesHolder {
@@ -51,7 +51,15 @@ body {
   height: 720px;
 }
 
-.tiles {
+.smallTileHolder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 600px;
+  height: 128px;
+}
+
+.bigTilesHolder {
   width: 1000px;
   height: 580px;
   margin: center;
@@ -62,20 +70,39 @@ body {
   align-self: center;
 }
 
-.tile {
+.bigTile {
   width: 350px;
   height: 240px;
+  font-size: 32pt;
   position: relative;
   text-align: right;
-  font-size: 32pt;
   color: white;
-  box-shadow: 0px 0px 30px #d9d9d9;
+  box-shadow: 0px 0px 30px white;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.smallTile {
+  width: 256px;
+  height: 104px;
+  font-size: 14pt;
+  position: relative;
+  text-align: right;
+  color: white;
+  box-shadow: 0px 0px 30px white;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.bigTile img {
+  width: 100%;
+  border: 3px solid white;
   border-radius: 16px;
 }
 
-.tile img {
+.smallTile img {
   width: 100%;
-  border: 3px solid #d9d9d9;
+  border: 3px solid white;
   border-radius: 16px;
 }
 .footer {
@@ -87,6 +114,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .footer h1 {
@@ -106,4 +134,112 @@ body {
   position: absolute;
   bottom: 8px;
   right: 16px;
+}
+
+.aboutNav {
+  width: 100%;
+  height: 128px;
+  background-color: #d9d9d9;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+.smallTilesOnBar {
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  justify-content: space-evenly;
+}
+
+.homeArrows {
+  width: 300px;
+  font-size: 12pt;
+  font-weight: 400;
+  padding-top: 20px;
+  cursor: pointer;
+}
+
+.aboutNavText {
+  margin-top: -10px;
+}
+
+.aboutDescript {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 830px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.description {
+  background-color: #d9d9d9;
+  border: 3px solid white;
+  border-radius: 16px;
+  box-shadow: 0px 0px 30px white;
+  width: 500px;
+  height: 600px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description p {
+  width: 400px;
+  height: 680px;
+  font-size: 16pt;
+  font-weight: 500;
+  text-align: center;
+}
+
+.description h1 {
+  margin-top: 40px;
+}
+
+.aboutPicHolder {
+  background-color: #d9d9d9;
+  border: 3px solid white;
+  border-radius: 16px;
+  box-shadow: 0px 0px 30px white;
+  width: 500px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.aboutPicHolder img {
+  width: 250px;
+  border-radius: 16px;
+  border: 3px solid white;
+}
+
+.appHolder {
+  width: 1000px;
+  height: 835px;
+  margin: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-self: center;
+}
+
+.appFrame {
+  width: 950px;
+  height: 640px;
+  font-size: 32pt;
+  position: relative;
+  text-align: right;
+  color: white;
+  background-color: #d9d9d9;
+  box-shadow: 0px 0px 30px white;
+  border: 3px solid white;
+  border-radius: 16px;
+  cursor: pointer;
+  align-self: center;
 }

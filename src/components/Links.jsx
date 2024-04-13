@@ -1,6 +1,9 @@
-import { FaGithub, FaLinkedin } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaHouse } from "react-icons/fa6";
+import { useNavigate } from "react-router";
 
-const Links = () => {
+const Links = ({ home }) => {
+  const navigation = useNavigate();
+
   return (
     <div className="links">
       <a
@@ -17,6 +20,14 @@ const Links = () => {
       >
         <FaGithub size={48} />
       </a>
+      {home ? (
+        <FaHouse
+          size={48}
+          onClick={() => navigation("/", { replace: true })}
+        />
+      ) : (
+        <></>
+      )}
     </div>
   );
 };

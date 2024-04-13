@@ -1,17 +1,17 @@
 import Links from "./Links";
 
-const Navbar = () => {
+const AppNav = () => {
   return (
     <div className="navbar">
       <div className="navContent">
         <h1 className="titleName">Garrett Smith - Software Developer</h1>
         <Links
           className="links"
-          home={false}
+          home={true}
         />
       </div>
     </div>
   );
 };
 
-export default Navbar;
+export default AppNav;

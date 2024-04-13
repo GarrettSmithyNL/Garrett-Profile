@@ -1,11 +1,22 @@
-import arrows from "../photos/down.svg";
+import { useNavigate } from "react-router";
+
+import downArrows from "../photos/down.svg";
 
 const Footer = () => {
+  const navigation = useNavigate();
+
+  const goAbout = () => {
+    navigation("/about", { replace: true });
+  };
+
   return (
-    <div className="footer">
+    <div
+      className="footer"
+      onClick={goAbout}
+    >
       <h1 className="footerText">About Me</h1>
       <img
-        src={arrows}
+        src={downArrows}
         alt="Arrows"
       />
     </div>

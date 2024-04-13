@@ -1,6 +1,9 @@
-const Tile = ({ image, text }) => {
+const Tile = ({ className, image, text, onClick }) => {
   return (
-    <div className="tile">
+    <div
+      className={className}
+      onClick={onClick}
+    >
       <img
         src={image}
         alt={text}

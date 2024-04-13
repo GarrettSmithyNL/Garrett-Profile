@@ -1,15 +1,77 @@
+import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
+
 import "./App.css";
 import Navbar from "./components/Navbar";
-import Tiles from "./components/Tiles";
+import BigTiles from "./components/BigTiles";
 import Footer from "./components/Footer";
+import AboutNavBar from "./components/AboutNavBar";
+import About from "./components/About";
+import AppPage from "./components/AppPage";
+import AppNav from "./components/AppNav";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Tiles />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Navbar />
+                <BigTiles />
+                <Footer />
+              </>
+            }
+          />
+          <Route
+            path="/about"
+            element={
+              <>
+                <AboutNavBar />
+                <About />
+              </>
+            }
+          />
+          <Route
+            path="/hangman"
+            element={
+              <>
+                <AppNav />
+                <AppPage hangman={true} />
+              </>
+            }
+          />
+          <Route
+            path="/tasktracker"
+            element={
+              <>
+                <AppNav />
+                <AppPage tasktracker={true} />
+              </>
+            }
+          />
+          <Route
+            path="/bitcoin"
+            element={
+              <>
+                <AppNav />
+                <AppPage bitcoin={true} />
+              </>
+            }
+          />
+          <Route
+            path="/construction"
+            element={
+              <>
+                <AppNav />
+                <AppPage construction={true} />
+              </>
+            }
+          />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

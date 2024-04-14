@@ -1,10 +1,15 @@
-import { useNavigate } from "react-router";
+/*
+ * This is the footer bar at the bottom of the home page that links to the about page
+ */
 
+import { useNavigate } from "react-router";
 import downArrows from "../photos/down.svg";
 
 const Footer = () => {
+  // Used to navigate around the page
   const navigation = useNavigate();
 
+  // This is used to move to the about page if you click the bar
   const goAbout = () => {
     navigation("/about", { replace: true });
   };

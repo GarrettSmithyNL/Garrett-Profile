@@ -1,3 +1,5 @@
+// This is the navbar for the home page that uses the link component
+
 import Links from "./Links";
 
 const Navbar = () => {

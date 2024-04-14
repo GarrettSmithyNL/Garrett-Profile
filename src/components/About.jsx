@@ -1,3 +1,6 @@
+/**
+ * Represents the About component, and creates the AboutDescript and ApoutPic
+ */
 import AboutDescript from "./AboutDescript";
 import AboutPic from "./AboutPic";
 

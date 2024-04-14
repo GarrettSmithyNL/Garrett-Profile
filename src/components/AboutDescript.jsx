@@ -1,4 +1,6 @@
-import React from "react";
+/**
+ * Component that displays the description for the About Me section.
+ */
 
 const AboutDescript = () => {
   return (

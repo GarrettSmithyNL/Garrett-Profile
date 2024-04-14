@@ -1,3 +1,6 @@
+// This is the losing message at the end of the hangman game
+// it also tells you the word you have wrong
+
 const LostMessage = ({ word }) => {
   return (
     <div className="lostMessage">

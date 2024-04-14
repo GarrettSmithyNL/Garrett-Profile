@@ -1,4 +1,6 @@
-import React from "react";
+/**
+ * Component that displays the profile picture and name of Garrett Smith.
+ */
 import Links from "./Links";
 import profilePic from "../photos/profilePic.jpg";
 

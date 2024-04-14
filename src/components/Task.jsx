@@ -1,3 +1,5 @@
+// This is each individual task on the task list
+
 import { FaTimes } from "react-icons/fa";
 
 const Task = ({ task, onDelete, onToggle }) => {

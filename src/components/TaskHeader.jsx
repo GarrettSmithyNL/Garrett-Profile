@@ -1,3 +1,6 @@
+// This is the header for the task tracker it hold both the title
+// and the button that opens the menu to add a task
+
 import TaskButton from "./TaskButton";
 import { useLocation } from "react-router-dom";
 

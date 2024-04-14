@@ -1,10 +1,15 @@
+/*
+ * Create the AddTask form to the task tracker, This was also made in class
+ */
 import { useState } from "react";
 
 const AddTask = ({ onAdd }) => {
+  // useState hooks for each of the nessacery variable
   let [text, setText] = useState("");
   let [day, setDay] = useState("");
   let [reminder, setReminder] = useState(false);
 
+  // This is what happenes when you click the submit button
   let onSubmit = (e) => {
     e.preventDefault();
     if (!text) {

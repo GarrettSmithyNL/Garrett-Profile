@@ -1,3 +1,5 @@
+// This is the small tiles on the navbar in the about page
+
 import Tile from "../components/Tile";
 
 const SmallTiles = ({ images, texts, clicks }) => {

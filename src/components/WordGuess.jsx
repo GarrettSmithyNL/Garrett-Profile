@@ -1,3 +1,6 @@
+// This is the where the word is made into the "blanks" for the
+// Hangman game
+
 const WordGuess = ({ word }) => {
   const arr = word;
   return (

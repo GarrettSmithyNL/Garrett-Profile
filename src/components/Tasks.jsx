@@ -1,3 +1,5 @@
+// This is the list of Tasks on the task tracker
+
 import Task from "./Task";
 
 const Tasks = ({ tasks, onDelete, onToggle }) => {

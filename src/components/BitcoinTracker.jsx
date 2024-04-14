@@ -1,3 +1,7 @@
+/*
+ * This is the bitcoin price tracker, where we make an API call with async functions
+ */
+
 import { useEffect, useState } from "react";
 import bitcoins from "../photos/coins.jpg";
 
@@ -12,7 +16,7 @@ const BitcoinTracker = () => {
 
     getPrice();
   }, []);
-
+  // Gets the price from the API call
   const fetchPrice = async () => {
     const res = await fetch("https://blockchain.info/q/24hrprice");
     const data = await res.json();
@@ -20,6 +24,7 @@ const BitcoinTracker = () => {
   };
 
   return (
+    // Renders the image and price of the bitcoin in the app page
     <div className="bitcoinHolder">
       <img
         src={bitcoins}

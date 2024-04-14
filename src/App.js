@@ -9,6 +9,8 @@ import About from "./components/About";
 import AppPage from "./components/AppPage";
 import AppNav from "./components/AppNav";
 
+// This is the main app function that mostly handles the routing of
+// the page
 function App() {
   return (
     <Router>

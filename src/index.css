@@ -332,6 +332,11 @@ header {
 
 .task h3 {
   margin-bottom: -10px;
+  text-align: left;
+}
+
+.task p {
+  text-align: left;
 }
 
 .task.reminder {
@@ -368,4 +373,59 @@ header {
 
 .form-control-check label {
   flex: 1;
+}
+
+.hangmanHolder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.keyboardHolder {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+}
+
+.hangmanHolder img {
+  height: 250px;
+}
+
+.keyboardButton {
+  width: 40px;
+  height: 50px;
+  border: 2px solid black;
+  background-color: white;
+  font-size: 20pt;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 50px;
+  margin-right: 3px;
+}
+
+.wordHolder {
+  height: 100px;
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: end;
+}
+
+.guessLetter {
+  width: 40px;
+  height: 50px;
+}
+
+.lostMessage {
+  width: 600px;
+  min-height: 200px;
+  text-align: center;
 }

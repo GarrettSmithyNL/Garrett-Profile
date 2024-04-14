@@ -1,3 +1,16 @@
 {
-  "tasks": []
+  "tasks": [
+    {
+      "id": "5dc3",
+      "text": "Doctors Appointment",
+      "day": "Tomorrow @ 4",
+      "reminder": true
+    },
+    {
+      "id": "2492",
+      "text": "Graduation",
+      "day": "December 2024",
+      "reminder": true
+    }
+  ]
 }
